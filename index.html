@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACASI Solutions | Digital Engineering, Hosting, Prozesse, Print & Drohne</title>
+    <meta name="description" content="MACASI Solutions verbindet hochpräzises Digital Engineering mit modernster Medienproduktion: Managed Hosting, Prozessoptimierung, Printmedien und 4K/6K Drohnenaufnahmen.">
+    
+    <!-- Fonts: Space Grotesk, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Ambient Background & Engineering Grid -->
+    <div class="bg-engineering-grid" aria-hidden="true"></div>
+    <div class="bg-radial-glow glow-top" aria-hidden="true"></div>
+    <div class="bg-radial-glow glow-mid" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="#start" class="brand-logo" data-page-trigger="main" aria-label="MACASI Solutions Startseite">
+                <div class="logo-mark">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">MACASI</span>
+                    <span class="logo-sub">SOLUTIONS // ENG.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation with Sliding Spotlight Indicator -->
+            <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+                <div class="nav-spotlight" id="nav-spotlight"></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#start" class="nav-link active" data-section="start" data-index="01">
+                            <span class="nav-idx">01</span>
+                            <span class="nav-label">Startseite</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#leistungen" class="nav-link" data-section="leistungen" data-index="02">
+                            <span class="nav-idx">02</span>
+                            <span class="nav-label">Leistungen</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#loesungsfinder" class="nav-link" data-section="loesungsfinder" data-index="03">
+                            <span class="nav-idx">03</span>
+                            <span class="nav-label">Engineering Lab</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projekte" class="nav-link" data-section="projekte" data-index="04">
+                            <span class="nav-idx">04</span>
+                            <span class="nav-label">Referenzen</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ueber-uns" class="nav-link" data-section="ueber-uns" data-index="05">
+                            <span class="nav-idx">05</span>
+                            <span class="nav-label">Über Uns</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kontakt" class="nav-link" data-section="kontakt" data-index="06">
+                            <span class="nav-idx">06</span>
+                            <span class="nav-label">Kontakt</span>
+                            <span class="nav-reticle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="sys-status-badge" title="Alle Hosting- & Engineering-Systeme online">
+                    <span class="pulse-dot"></span>
+                    <span class="mono-label">SYS.ONLINE // 99.98%</span>
+                </div>
+                <a href="#kontakt" class="btn btn-neon btn-sm magnetic-btn">
+                    <span>Projekt starten</span>
+                    <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span class="hamburger-line line-1"></span>
+                    <span class="hamburger-line line-2"></span>
+                    <span class="hamburger-line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer (Optimized for iPhone & iPad) -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+        <div class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+                <span class="mono-tag">// NAVIGATION_MATRIX v4.2</span>
+                <span class="sys-status-inline"><span class="pulse-dot"></span> SYSTEM ACTIVE</span>
+            </div>
+            <ul class="mobile-nav-list">
+                <li>
+                    <a href="#start" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">01 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Startseite</span>
+                            <span class="mobile-link-sub">Systemübersicht & Vision</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#leistungen" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">02 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Leistungen</span>
+                            <span class="mobile-link-sub">Hosting, Prozesse, Print & Drohne</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#loesungsfinder" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">03 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Engineering Lab</span>
+                            <span class="mobile-link-sub">Interaktiver Architektur-Konfigurator</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projekte" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">04 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Referenzen</span>
+                            <span class="mobile-link-sub">Case Studies & Messbare Resultate</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ueber-uns" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">05 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Über Uns</span>
+                            <span class="mobile-link-sub">DNA, Standards & Arbeitsweise</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#kontakt" class="mobile-nav-link" data-mobile-link>
+                        <span class="mono-num">06 //</span>
+                        <div class="mobile-link-body">
+                            <span class="mobile-link-title">Kontakt</span>
+                            <span class="mobile-link-sub">Direktkanal & Erstberatung</span>
+                        </div>
+                        <span class="mobile-link-arrow">→</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-drawer-footer">
+                <div class="mobile-quick-specs">
+                    <div>
+                        <span class="spec-label">HOSTING NODES</span>
+                        <span class="spec-val">DE-FRA // ISO 27001</span>
+                    </div>
+                    <div>
+                        <span class="spec-label">UAV LIZENZ</span>
+                        <span class="spec-val">EU A1/A2/A3</span>
+                    </div>
+                </div>
+                <a href="#kontakt" class="btn btn-neon btn-full" data-mobile-link>Kostenloses Erstgespräch anfragen</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- ==========================================
+             01 // HERO SECTION (STARTSEITE)
+             ========================================== -->
+        <section id="start" class="hero-section section-observe">
+            <div class="container hero-grid">
+                <!-- Left Column: Value Proposition -->
+                <div class="hero-copy">
+                    <div class="eyebrow-badge">
+                        <span class="badge-bracket">[</span>
+                        <span class="pulse-dot"></span>
+                        <span class="mono-text">DIGITAL ENGINEERING & MEDIA ARCHITECTURE</span>
+                        <span class="badge-bracket">]</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Präzision in <span class="text-gradient-neon">Code</span>, Prozessen & <span class="text-underline-tech">Perspektive.</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        Wir verbinden hochverfügbares <strong>Website Hosting</strong>, intelligente <strong>Prozessoptimierung</strong>, haptisch exzellente <strong>Printmedien</strong> und spektakuläre <strong>4K/6K Drohnenaufnahmen</strong> zu einem nahtlosen System für Ihren Unternehmensvorsprung.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#leistungen" class="btn btn-neon btn-lg magnetic-btn">
+                            <span>Leistungen entdecken</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#loesungsfinder" class="btn btn-glass btn-lg magnetic-btn">
+                            <span class="mono-prefix">//</span>
+                            <span>System-Konfigurator</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Discipline Strip -->
+                    <div class="hero-pillars-strip">
+                        <a href="#service-hosting" class="mini-pillar">
+                            <span class="mini-num">01</span>
+                            <span class="mini-name">Managed Hosting</span>
+                        </a>
+                        <a href="#service-prozesse" class="mini-pillar">
+                            <span class="mini-num">02</span>
+                            <span class="mini-name">Prozessoptimierung</span>
+                        </a>
+                        <a href="#service-print" class="mini-pillar">
+                            <span class="mini-num">03</span>
+                            <span class="mini-name">Print Engineering</span>
+                        </a>
+                        <a href="#service-drohne" class="mini-pillar">
+                            <span class="mini-num">04</span>
+                            <span class="mini-name">Drohnen-Luftbild</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Digital Engineering Command Console -->
+                <div class="hero-visual">
+                    <div class="telemetry-console spotlight-card" id="hero-console">
+                        <!-- Corner Crosshairs -->
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="console-header">
+                            <div class="console-dots">
+                                <span class="dot red"></span>
+                                <span class="dot amber"></span>
+                                <span class="dot neon"></span>
+                            </div>
+                            <div class="console-title mono-text">MACASI_CORE_TELEMETRY // v2.6</div>
+                            <div class="console-live-tag"><span class="pulse-dot"></span> LIVE</div>
+                        </div>
+
+                        <!-- Interactive Module Switcher inside Hero Console -->
+                        <div class="console-tabs" role="tablist" aria-label="System-Module">
+                            <button class="console-tab active" data-console-tab="hosting" role="tab" aria-selected="true">
+                                <span class="mono-idx">01</span> HOSTING
+                            </button>
+                            <button class="console-tab" data-console-tab="process" role="tab" aria-selected="false">
+                                <span class="mono-idx">02</span> PROZESSE
+                            </button>
+                            <button class="console-tab" data-console-tab="print" role="tab" aria-selected="false">
+                                <span class="mono-idx">03</span> PRINT
+                            </button>
+                            <button class="console-tab" data-console-tab="drone" role="tab" aria-selected="false">
+                                <span class="mono-idx">04</span> DROHNE
+                            </button>
+                        </div>
+
+                        <div class="console-viewport">
+                            <!-- Canvas / SVG Radar & Node Graph -->
+                            <div class="console-graphic">
+                                <svg class="hud-svg" viewBox="0 0 420 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Grid Lines -->
+                                    <g stroke="rgba(0, 245, 155, 0.1)" stroke-width="1">
+                                        <line x1="0" y1="45" x2="420" y2="45" />
+                                        <line x1="0" y1="95" x2="420" y2="95" />
+                                        <line x1="0" y1="145" x2="420" y2="145" />
+                                        <line x1="0" y1="195" x2="420" y2="195" />
+                                        <line x1="70" y1="0" x2="70" y2="230" />
+                                        <line x1="140" y1="0" x2="140" y2="230" />
+                                        <line x1="210" y1="0" x2="210" y2="230" />
+                                        <line x1="280" y1="0" x2="280" y2="230" />
+                                        <line x1="350" y1="0" x2="350" y2="230" />
+                                    </g>
+                                    
+                                    <!-- Animated Telemetry Wave -->
+                                    <path id="hud-wave-path" d="M 10 165 Q 65 90, 120 135 T 230 85 T 340 65 T 410 35" stroke="#00F59B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                    <path d="M 10 165 Q 65 90, 120 135 T 230 85 T 340 65 T 410 35 L 410 215 L 10 215 Z" fill="url(#neonFade)" opacity="0.28"/>
+
+                                    <!-- Target Reticle Ring -->
+                                    <g class="hud-reticle-group" transform="translate(310, 75)">
+                                        <circle cx="0" cy="0" r="32" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4" class="spin-slow"/>
+                                        <circle cx="0" cy="0" r="20" stroke="#00F59B" stroke-width="1.5" stroke-opacity="0.7"/>
+                                        <circle cx="0" cy="0" r="4" fill="#00F59B"/>
+                                        <line x1="-38" y1="0" x2="-24" y2="0" stroke="#00F59B" stroke-width="1.5"/>
+                                        <line x1="24" y1="0" x2="38" y2="0" stroke="#00F59B" stroke-width="1.5"/>
+                                        <line x1="0" y1="-38" x2="0" y2="-24" stroke="#00F59B" stroke-width="1.5"/>
+                                        <line x1="0" y1="24" x2="0" y2="38" stroke="#00F59B" stroke-width="1.5"/>
+                                    </g>
+
+                                    <!-- Data Nodes -->
+                                    <circle cx="120" cy="135" r="5" fill="#060D1A" stroke="#00F59B" stroke-width="2.5"/>
+                                    <circle cx="230" cy="85" r="5" fill="#060D1A" stroke="#00F59B" stroke-width="2.5"/>
+
+                                    <!-- HUD Overlay Labels -->
+                                    <text x="16" y="26" fill="#94A3B8" font-family="JetBrains Mono" font-size="10" id="hud-svg-title">CLUSTER: DE-FRA-NVME-01 // SSL TLS 1.3</text>
+                                    <text x="16" y="212" fill="#00F59B" font-family="JetBrains Mono" font-size="10" id="hud-svg-sub">LATENCY: 11.4ms | PACKET LOSS: 0.00%</text>
+
+                                    <defs>
+                                        <linearGradient id="neonFade" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#00F59B" stop-opacity="0.6"/>
+                                            <stop offset="100%" stop-color="#00F59B" stop-opacity="0.0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <!-- Dynamic Console Metrics Readout -->
+                            <div class="console-readout" id="console-readout">
+                                <div class="readout-header">
+                                    <span class="mono-badge" id="console-module-code">MOD_01 // INFRASTRUCTURE</span>
+                                    <span class="readout-status" id="console-module-status">OPTIMAL</span>
+                                </div>
+                                <h2 class="readout-title" id="console-module-title">High-Availability Cloud & Web Hosting</h2>
+                                <p class="readout-desc" id="console-module-desc">
+                                    Dedizierte NVMe-Serverarchitektur in deutschen Rechenzentren mit automatischem Failover, täglichen Backups und kompromissloser Ladezeit-Optimierung.
+                                </p>
+                                <div class="readout-metrics">
+                                    <div class="metric-box">
+                                        <span class="metric-label" id="metric-1-label">UPTIME SLA</span>
+                                        <span class="metric-val" id="metric-1-val">99.98%</span>
+                                    </div>
+                                    <div class="metric-box">
+                                        <span class="metric-label" id="metric-2-label">TTFB SPEED</span>
+                                        <span class="metric-val" id="metric-2-val">&lt; 35 ms</span>
+                                    </div>
+                                    <div class="metric-box">
+                                        <span class="metric-label" id="metric-3-label">STANDORT</span>
+                                        <span class="metric-val" id="metric-3-val">DSGVO / DE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Engineering Metrics Bar -->
+            <div class="container">
+                <div class="metrics-strip">
+                    <div class="metrics-item">
+                        <div class="metrics-number"><span class="counter" data-target="99.9">99.9</span>%</div>
+                        <div class="metrics-meta">
+                            <span class="mono-tag">HOSTING VERFÜGBARKEIT</span>
+                            <p>Managed High-Speed Server & Monitoring</p>
+                        </div>
+                    </div>
+                    <div class="metrics-item">
+                        <div class="metrics-number">-<span class="counter" data-target="65">65</span>%</div>
+                        <div class="metrics-meta">
+                            <span class="mono-tag">PROZESS-ZEITERSPARNIS</span>
+                            <p>Durch intelligente Workflows & Automatisierung</p>
+                        </div>
+                    </div>
+                    <div class="metrics-item">
+                        <div class="metrics-number"><span class="counter" data-target="300">300</span>+ DPI</div>
+                        <div class="metrics-meta">
+                            <span class="mono-tag">PRINT PRÄZISION</span>
+                            <p>Farbverbindlicher Offset- & Digitaldruck</p>
+                        </div>
+                    </div>
+                    <div class="metrics-item">
+                        <div class="metrics-number">4K / 6K</div>
+                        <div class="metrics-meta">
+                            <span class="mono-tag">AERIAL CINEMA & INSPEKTION</span>
+                            <p>EU-zertifizierte Drohnenflüge & Luftbilder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             02 // LEISTUNGEN (4 KERN-DISZIPLINEN)
+             ========================================== -->
+        <section id="leistungen" class="section-padding section-observe">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span class="mono-tag">// 02_LEISTUNGSARCHITEKTUR</span>
+                    </div>
+                    <div class="section-header-split">
+                        <h2 class="section-title">Vier Disziplinen. <span class="text-gradient-neon">Ein präzises Ökosystem.</span></h2>
+                        <p class="section-subtitle">
+                            Warum vier verschiedene Agenturen koordinieren, wenn Infrastruktur, interne Abläufe, Markenauftritt auf Papier und visuelle Luftbild-Perfektion aus einer einzigen Engineering-Hand kommen?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Grid of the 4 Core Services -->
+                <div class="services-bento-grid">
+                    
+                    <!-- SERVICE 01: WEBSITE HOSTING & WEB ENGINEERING -->
+                    <article id="service-hosting" class="service-card spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="service-card-top">
+                            <div class="service-icon-wrap">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="2" y="3" width="20" height="7" rx="2"/>
+                                    <rect x="2" y="14" width="20" height="7" rx="2"/>
+                                    <circle cx="6" cy="6.5" r="1" fill="currentColor"/>
+                                    <circle cx="6" cy="17.5" r="1" fill="currentColor"/>
+                                    <path d="M10 6.5h8M10 17.5h8"/>
+                                </svg>
+                            </div>
+                            <div class="service-telemetry">
+                                <span class="mono-code">SYS_01 // WEB & CLOUD</span>
+                                <span class="status-pill"><span class="pulse-dot"></span> NVMe CLUSTER</span>
+                            </div>
+                        </div>
+
+                        <h3 class="service-title">Website Hosting & Web-Engineering</h3>
+                        <p class="service-desc">
+                            Schnelle Ladezeiten, maximale Sicherheit und persönlicher Support ohne Warteschleifen. Wir hosten, warten und entwickeln Ihre Unternehmenswebsite auf modernster Enterprise-Infrastruktur.
+                        </p>
+
+                        <!-- Visual Server Rack Telemetry Bar -->
+                        <div class="tech-widget hosting-widget">
+                            <div class="rack-row">
+                                <span class="rack-label">NODE_DE_01</span>
+                                <div class="rack-leds">
+                                    <span class="led on"></span><span class="led on"></span><span class="led on"></span><span class="led pulse"></span>
+                                </div>
+                                <span class="rack-ping">12ms</span>
+                            </div>
+                            <div class="rack-row">
+                                <span class="rack-label">SSL_SHIELD_WAF</span>
+                                <div class="rack-bar"><span style="width: 98%"></span></div>
+                                <span class="rack-ping">ACTIVE</span>
+                            </div>
+                        </div>
+
+                        <ul class="service-specs">
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Managed High-Speed Hosting:</strong> 100% NVMe-SSD Storage in ISO-zertifizierten Rechenzentren (DSGVO-konform).</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Rundum-Sorglos-Wartung:</strong> Automatische tägliche Backups, 24/7 Uptime-Monitoring, SSL-Zertifikate & Sicherheits-Updates.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Domain, E-Mail & DNS:</strong> Professionelle Business-Postfächer, SPF/DKIM/DMARC-Schutz und nahtloser Umzugsservice.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Performance Webdesign:</strong> Moderne, responsive Websites mit Top-Werten bei Google Core Web Vitals.</div>
+                            </li>
+                        </ul>
+
+                        <div class="service-card-footer">
+                            <span class="mono-spec-tag">SLA 99.98% // HTTP/3 // DDoS-SCHUTZ</span>
+                            <a href="#kontakt" class="service-cta-link" data-prefill-service="Website Hosting & Web-Engineering">
+                                <span>Hosting anfragen</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- SERVICE 02: PROZESSOPTIMIERUNG & AUTOMATISIERUNG -->
+                    <article id="service-prozesse" class="service-card spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="service-card-top">
+                            <div class="service-icon-wrap">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <circle cx="6" cy="6" r="3"/>
+                                    <circle cx="18" cy="6" r="3"/>
+                                    <circle cx="12" cy="18" r="3"/>
+                                    <path d="M8.5 7.5L11 15.5M15.5 7.5L13 15.5M9 6h6"/>
+                                </svg>
+                            </div>
+                            <div class="service-telemetry">
+                                <span class="mono-code">SYS_02 // WORKFLOW ENGINE</span>
+                                <span class="status-pill"><span class="pulse-dot"></span> AUTO-SYNC</span>
+                            </div>
+                        </div>
+
+                        <h3 class="service-title">Prozessoptimierung & Digitalisierung</h3>
+                        <p class="service-desc">
+                            Schluss mit doppelter Datenpflege, Zettelwirtschaft und Medienbrüchen. Wir analysieren Ihre Geschäftsprozesse und bauen schlanke, automatisierte Abläufe, die messbar Zeit und Kosten sparen.
+                        </p>
+
+                        <!-- Visual Workflow Pipeline -->
+                        <div class="tech-widget workflow-widget">
+                            <div class="wf-node">INPUT / CRM</div>
+                            <div class="wf-connector"><span class="wf-packet"></span></div>
+                            <div class="wf-node wf-node-active">AUTOMATION API</div>
+                            <div class="wf-connector"><span class="wf-packet delay"></span></div>
+                            <div class="wf-node">ERP / OUTPUT</div>
+                        </div>
+
+                        <ul class="service-specs">
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Ist-Analyse & Engpass-Diagnose:</strong> Transparente Aufdeckung von Zeitfressern und manuellen Routineaufgaben im Tagesgeschäft.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>System-Verknüpfung & APIs:</strong> Nahtlose Verbindung von CRM, Buchhaltung, ERP, E-Mail, Kalender und Projekt-Tools.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Digitale Workflows:</strong> Automatisierte Angebotserstellung, Kunden-Onboarding, Rechnungsflüsse und Formularprozesse.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Team-Befähigung:</strong> Klare Dokumentation und praxisnahe Einführung, damit Ihr Team sofort produktiv arbeitet.</div>
+                            </li>
+                        </ul>
+
+                        <div class="service-card-footer">
+                            <span class="mono-spec-tag">REST API // WEBHOOKS // LEAN DIGITAL</span>
+                            <a href="#kontakt" class="service-cta-link" data-prefill-service="Prozessoptimierung & Automatisierung">
+                                <span>Prozess-Audit starten</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- SERVICE 03: PRINT MEDIEN & CORPORATE DESIGN -->
+                    <article id="service-print" class="service-card spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="service-card-top">
+                            <div class="service-icon-wrap">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="service-telemetry">
+                                <span class="mono-code">SYS_03 // PRINT & BRAND</span>
+                                <span class="status-pill"><span class="pulse-dot"></span> CMYK / PANTONE</span>
+                            </div>
+                        </div>
+
+                        <h3 class="service-title">Print Medien & Corporate Design</h3>
+                        <p class="service-desc">
+                            Digitale Exzellenz braucht ein starkes haptisches Gegenstück. Wir gestalten und produzieren hochwertige Drucksachen und Werbetechnik, die Ihre Marke physisch erlebbar machen.
+                        </p>
+
+                        <!-- Visual CMYK Registration & Crop Marks -->
+                        <div class="tech-widget print-widget">
+                            <div class="cmyk-bars">
+                                <span class="c-bar cyan" title="Cyan">C</span>
+                                <span class="c-bar magenta" title="Magenta">M</span>
+                                <span class="c-bar yellow" title="Yellow">Y</span>
+                                <span class="c-bar key" title="Key/Black">K</span>
+                                <span class="c-bar spot" title="Neon Spot">PANTONE</span>
+                            </div>
+                            <div class="print-reg-mark">
+                                <span>PASSKREUZ // 300 DPI // FOGRA39</span>
+                            </div>
+                        </div>
+
+                        <ul class="service-specs">
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Geschäftsausstattung:</strong> Edle Visitenkarten (inkl. Heißfolie, Prägung, UV-Lack), Briefpapier, Mappen & Stempel.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Marketing- & Vertriebsmedien:</strong> Imagebroschüren, Produktkataloge, Flyer, Roll-Ups, Plakate und Messestände.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Werbetechnik & Beschilderung:</strong> Fahrzeugbeschriftung, Firmenschilder, Schaufensterfolierung und Bauzaunbanner.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Druckvorstufe & Produktion:</strong> Reinzeichnung, Farbmanagement, Papierberatung und komplette Druckabwicklung bis zur Lieferung.</div>
+                            </li>
+                        </ul>
+
+                        <div class="service-card-footer">
+                            <span class="mono-spec-tag">ISO COATED V2 // VEREDELUNG // GROSSFORMAT</span>
+                            <a href="#kontakt" class="service-cta-link" data-prefill-service="Print Medien & Corporate Design">
+                                <span>Printprojekt anfragen</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- SERVICE 04: DROHNEN AUFNAHMEN & LUFTBILD-ENGINEERING -->
+                    <article id="service-drohne" class="service-card spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="service-card-top">
+                            <div class="service-icon-wrap">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M9 9L5 5M15 9l4-4M9 15l-4 4M15 15l4 4"/>
+                                    <circle cx="4" cy="4" r="2.5"/>
+                                    <circle cx="20" cy="4" r="2.5"/>
+                                    <circle cx="4" cy="20" r="2.5"/>
+                                    <circle cx="20" cy="20" r="2.5"/>
+                                    <rect x="9" y="9" width="6" height="6" rx="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="service-telemetry">
+                                <span class="mono-code">SYS_04 // AERIAL UAV</span>
+                                <span class="status-pill"><span class="pulse-dot"></span> 4K/6K RAW</span>
+                            </div>
+                        </div>
+
+                        <h3 class="service-title">Drohnen-Aufnahmen & Luftbild-Technik</h3>
+                        <p class="service-desc">
+                            Neue Blickwinkel für Marketing, Dokumentation und Inspektion. Mit modernster Drohnentechnik liefern wir gestochen scharfe Luftbilder und stabilisierte Kamerafahrten für Web, Social Media und Print.
+                        </p>
+
+                        <!-- Visual Drone Telemetry HUD -->
+                        <div class="tech-widget drone-widget">
+                            <div class="drone-hud-item">
+                                <span class="hud-k">ALTITUDE</span>
+                                <span class="hud-v">85.4 m AGL</span>
+                            </div>
+                            <div class="drone-hud-item">
+                                <span class="hud-k">GIMBAL</span>
+                                <span class="hud-v">-24° LOCKED</span>
+                            </div>
+                            <div class="drone-hud-item">
+                                <span class="hud-k">OPTICS</span>
+                                <span class="hud-v">6K 60FPS D-LOG</span>
+                            </div>
+                        </div>
+
+                        <ul class="service-specs">
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Imagefilme & Immobilien:</strong> Kinoreife 4K/6K-Luftaufnahmen von Firmengebäuden, Hotels, Gewerbeobjekten und Events.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Baufortschritt & Inspektion:</strong> Regelmäßige Baudokumentation, Dach-, Fassaden- und Photovoltaik-Befliegungen ohne teures Gerüst.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Rechtssicher & Versichert:</strong> EU-Fernpilotenzeugnis (A1/A2/A3), gewerbliche Luftfahrt-Haftpflicht und Einholung aller Aufstiegsgenehmigungen.</div>
+                            </li>
+                            <li>
+                                <span class="spec-check">✓</span>
+                                <div><strong>Inhouse Post-Production:</strong> Professionelles Color Grading, Schnitt, Vertonung sowie hochauflösende Retusche für Großformat-Print.</div>
+                            </li>
+                        </ul>
+
+                        <div class="service-card-footer">
+                            <span class="mono-spec-tag">EU-LIZENZIERT // 10-BIT D-LOG // 48MP RAW</span>
+                            <a href="#kontakt" class="service-cta-link" data-prefill-service="Drohnen-Aufnahmen & Luftbild">
+                                <span>Flugtermin planen</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             03 // INTERACTIVE ENGINEERING LAB (LÖSUNGSFINDER)
+             ========================================== -->
+        <section id="loesungsfinder" class="section-padding section-observe">
+            <div class="container">
+                <div class="lab-wrapper spotlight-card">
+                    <span class="corner-mark tl"></span>
+                    <span class="corner-mark tr"></span>
+                    <span class="corner-mark bl"></span>
+                    <span class="corner-mark br"></span>
+
+                    <div class="lab-header">
+                        <div>
+                            <span class="mono-tag">// 03_INTERACTIVE_SOLUTION_ARCHITECT</span>
+                            <h2 class="section-title">Der MACASI <span class="text-gradient-neon">System-Konfigurator</span></h2>
+                        </div>
+                        <p class="lab-intro">
+                            Wählen Sie Ihr aktuelles Vorhaben – unser Engineering-System zeigt Ihnen sofort, wie unsere vier Disziplinen optimal ineinandergreifen.
+                        </p>
+                    </div>
+
+                    <!-- Scenario Selector Buttons -->
+                    <div class="scenario-tabs" role="tablist" aria-label="Unternehmensszenarien">
+                        <button class="scenario-btn active" data-scenario="relaunch" role="tab" aria-selected="true">
+                            <span class="scen-num">SZENARIO 01</span>
+                            <span class="scen-title">Kompletter Marken- & Web-Relaunch</span>
+                        </button>
+                        <button class="scenario-btn" data-scenario="efficiency" role="tab" aria-selected="false">
+                            <span class="scen-num">SZENARIO 02</span>
+                            <span class="scen-title">Zeitfresser stoppen & Digitalisieren</span>
+                        </button>
+                        <button class="scenario-btn" data-scenario="realestate" role="tab" aria-selected="false">
+                            <span class="scen-num">SZENARIO 03</span>
+                            <span class="scen-title">Immobilien-, Bau- & Standort-Marketing</span>
+                        </button>
+                        <button class="scenario-btn" data-scenario="event" role="tab" aria-selected="false">
+                            <span class="scen-num">SZENARIO 04</span>
+                            <span class="scen-title">Messeauftritt & Vertriebs-Offensive</span>
+                        </button>
+                    </div>
+
+                    <!-- Dynamic Output Matrix -->
+                    <div class="scenario-output" id="scenario-output">
+                        <div class="scenario-main-info">
+                            <div class="scenario-badge-row">
+                                <span class="mono-badge" id="scen-code">BLUEPRINT // RELAUNCH_360</span>
+                                <span class="scen-impact" id="scen-impact">Effekt: Konsistenter Premium-Auftritt auf allen Kanälen</span>
+                            </div>
+                            <h3 class="scen-headline" id="scen-headline">Vom eigenen Hochleistungs-Server bis zur edlen Broschüre & Luftaufnahme Ihres Firmensitzes.</h3>
+                            <p class="scen-description" id="scen-description">
+                                Statt Stückwerk erhalten Sie einen Guss: Wir fotografieren und filmen Ihren Standort aus der Luft, entwickeln daraus eine blitzschnelle Website auf unserem Managed Hosting und statten Ihr Vertriebsteam mit exakt abgestimmten Printmedien aus.
+                            </p>
+                            <div class="scen-action-row">
+                                <a href="#kontakt" class="btn btn-neon magnetic-btn" id="scen-cta-btn" data-prefill-service="Kompletter Marken- & Web-Relaunch">
+                                    <span>Dieses Paket unverbindlich anfragen</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scenario-modules-grid">
+                            <div class="scen-mod-box" id="scen-mod-hosting">
+                                <div class="scen-mod-top">
+                                    <span class="mono-idx">01 // HOSTING</span>
+                                    <span class="mod-active-pill">AKTIV</span>
+                                </div>
+                                <p id="scen-text-hosting">Managed NVMe-Hosting, SSL-Sicherheit, Domain-Setup & blitzschnelle Website.</p>
+                            </div>
+                            <div class="scen-mod-box" id="scen-mod-process">
+                                <div class="scen-mod-top">
+                                    <span class="mono-idx">02 // PROZESSE</span>
+                                    <span class="mod-active-pill">AKTIV</span>
+                                </div>
+                                <p id="scen-text-process">Digitale Kontakt- & Anfrageformulare direkt ins CRM mit automatischer Terminbuchung.</p>
+                            </div>
+                            <div class="scen-mod-box" id="scen-mod-print">
+                                <div class="scen-mod-top">
+                                    <span class="mono-idx">03 // PRINT</span>
+                                    <span class="mod-active-pill">AKTIV</span>
+                                </div>
+                                <p id="scen-text-print">Neue Visitenkarten mit Veredelung, Briefbogen und hochwertige Imagebroschüre.</p>
+                            </div>
+                            <div class="scen-mod-box" id="scen-mod-drone">
+                                <div class="scen-mod-top">
+                                    <span class="mono-idx">04 // DROHNE</span>
+                                    <span class="mod-active-pill">AKTIV</span>
+                                </div>
+                                <p id="scen-text-drone">4K Hero-Video Ihres Unternehmensstandorts für die Startseite & hochauflösende Print-Fotos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             04 // REFERENZEN & CASE STUDIES
+             ========================================== -->
+        <section id="projekte" class="section-padding section-observe">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span class="mono-tag">// 04_PROJEKT_TELEMETRIE</span>
+                    </div>
+                    <div class="section-header-split">
+                        <h2 class="section-title">Praxisbeispiele & <span class="text-gradient-neon">System-Synergien.</span></h2>
+                        <div class="filter-pills" role="tablist" aria-label="Projekte filtern">
+                            <button class="filter-pill active" data-filter="all">Alle Systeme</button>
+                            <button class="filter-pill" data-filter="hosting">Hosting & Web</button>
+                            <button class="filter-pill" data-filter="prozesse">Prozesse</button>
+                            <button class="filter-pill" data-filter="print">Print</button>
+                            <button class="filter-pill" data-filter="drohne">Drohne</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cases-grid" id="cases-grid">
+                    <!-- Case 1 -->
+                    <article class="case-card spotlight-card" data-categories="hosting prozesse">
+                        <div class="case-visual case-vis-1">
+                            <div class="case-overlay-tags">
+                                <span class="mono-chip">HOSTING</span>
+                                <span class="mono-chip">PROZESSOPTIMIERUNG</span>
+                            </div>
+                            <div class="case-graphic-hud">
+                                <span class="hud-big-metric">-68%</span>
+                                <span class="hud-sub-metric">BEARBEITUNGSZEIT PRO AUFTRAG</span>
+                            </div>
+                        </div>
+                        <div class="case-body">
+                            <span class="case-client mono-text">INDUSTRIE & HANDWERK // MITTELSTAND</span>
+                            <h3 class="case-title">High-Speed Web-Plattform & Automatisierter Angebots-Workflow</h3>
+                            <p class="case-text">
+                                Migration auf unser Managed NVMe-Cluster inklusive digitalem Konfigurator: Kundenanfragen werden automatisch vorqualifiziert, im System angelegt und als fertiger Angebotsentwurf bereitgestellt.
+                            </p>
+                            <div class="case-results">
+                                <div><strong>0.4s</strong> Ladezeit</div>
+                                <div><strong>12 Std./Woche</strong> Zeitersparnis</div>
+                                <div><strong>100%</strong> DSGVO-konform</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case 2 -->
+                    <article class="case-card spotlight-card" data-categories="drohne print hosting">
+                        <div class="case-visual case-vis-2">
+                            <div class="case-overlay-tags">
+                                <span class="mono-chip">DROHNE 6K</span>
+                                <span class="mono-chip">PRINT MEDIEN</span>
+                                <span class="mono-chip">WEB</span>
+                            </div>
+                            <div class="case-graphic-hud">
+                                <span class="hud-big-metric">6K RAW</span>
+                                <span class="hud-sub-metric">LUFTBILD & EXPOSÉ-DRUCK</span>
+                            </div>
+                        </div>
+                        <div class="case-body">
+                            <span class="case-client mono-text">IMMOBILIEN & PROJEKTENTWICKLUNG</span>
+                            <h3 class="case-title">Luftbild-Inszenierung, 36-seitiges Print-Exposé & Projekt-Website</h3>
+                            <p class="case-text">
+                                Befliegung eines neuen Gewerbeparks in der Dämmerung (Golden Hour), Gestaltung und Druck hochwertiger Investoren-Broschüren mit Matt-Cellophanierung sowie Launch der Projekt-Landingpage.
+                            </p>
+                            <div class="case-results">
+                                <div><strong>48 MP</strong> Großformat-Druck</div>
+                                <div><strong>500 Stk.</strong> Premium-Auflage</div>
+                                <div><strong>+140%</strong> Anfragen</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case 3 -->
+                    <article class="case-card spotlight-card" data-categories="prozesse print">
+                        <div class="case-visual case-vis-3">
+                            <div class="case-overlay-tags">
+                                <span class="mono-chip">CORPORATE PRINT</span>
+                                <span class="mono-chip">DIGITALE PROZESSE</span>
+                            </div>
+                            <div class="case-graphic-hud">
+                                <span class="hud-big-metric">QR-SYNC</span>
+                                <span class="hud-sub-metric">PRINT TRIFFT DIGITALEN WORKFLOW</span>
+                            </div>
+                        </div>
+                        <div class="case-body">
+                            <span class="case-client mono-text">DIENSTLEISTUNG & GASTRONOMIE / LOGISTIK</span>
+                            <h3 class="case-title">Vernetzte Printmedien mit direkter Prozess-Anbindung</h3>
+                            <p class="case-text">
+                                Entwicklung langlebiger Print-Kataloge, Service-Aufkleber und Messe-Aufsteller mit dynamischen QR-Schnittstellen, die Nachbestellungen und Service-Tickets direkt in den internen Workflow einspeisen.
+                            </p>
+                            <div class="case-results">
+                                <div><strong>0</strong> Medienbrüche</div>
+                                <div><strong>UV-Lack</strong> Veredelung</div>
+                                <div><strong>24/7</strong> Self-Service</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             05 // ÜBER UNS & ARBEITSWEISE (ENGINEERING DNA)
+             ========================================== -->
+        <section id="ueber-uns" class="section-padding section-observe">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="mono-tag">// 05_ÜBER_MACASI_SOLUTIONS</span>
+                        <h2 class="section-title">Digital Engineering trifft <span class="text-gradient-neon">Hands-on Macher-Mentalität.</span></h2>
+                        <p class="about-lead">
+                            Hinter <strong>MACASI Solutions</strong> steht die Überzeugung, dass moderne Unternehmen heute keine isolierten Einzellösungen mehr brauchen, sondern durchdachte Gesamtsysteme.
+                        </p>
+                        <p class="about-text">
+                            Was nützt die schönste Website, wenn das Hosting langsam ist? Was bringt ein edler Produktkatalog im Druck, wenn die anschließende Auftragsabwicklung im Büro unnötig kompliziert ist? Und warum Stockfotos nutzen, wenn echte Drohnenaufnahmen Ihres Unternehmens sofort Vertrauen schaffen?
+                        </p>
+                        <p class="about-text">
+                            Wir denken wie Ingenieure und gestalten wie Kreative: strukturiert, verlässlich, technisch auf dem neuesten Stand und mit einem festen Ansprechpartner für alle vier Bereiche.
+                        </p>
+
+                        <div class="dna-badges">
+                            <div class="dna-item">
+                                <span class="dna-icon">⚡</span>
+                                <div>
+                                    <strong>Ein Ansprechpartner</strong>
+                                    <span>Kurze Wege ohne Agentur-Pingpong</span>
+                                </div>
+                            </div>
+                            <div class="dna-item">
+                                <span class="dna-icon">🛡️</span>
+                                <div>
+                                    <strong>Höchste Zuverlässigkeit</strong>
+                                    <span>Saubere Technik, klare Absprachen & Termintreue</span>
+                                </div>
+                            </div>
+                            <div class="dna-item">
+                                <span class="dna-icon">📐</span>
+                                <div>
+                                    <strong>Messbarer Mehrwert</strong>
+                                    <span>Jedes Projekt zahlt auf Zeitgewinn oder Umsatz ein</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4-Step Engineering Blueprint Timeline -->
+                    <div class="blueprint-timeline spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <div class="blueprint-header">
+                            <span class="mono-tag">WORKFLOW // 4-PHASEN-PROTOKOLL</span>
+                            <span class="mono-status">ISO-ORIENTED</span>
+                        </div>
+
+                        <div class="timeline-steps">
+                            <div class="timeline-step">
+                                <div class="step-marker">01</div>
+                                <div class="step-body">
+                                    <h4>System-Audit & Zieldefinition</h4>
+                                    <p>Wir prüfen Ihre bestehende Website, Ihre internen Abläufe und Ihren Medienbedarf – ehrlich, verständlich und auf den Punkt.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-marker">02</div>
+                                <div class="step-body">
+                                    <h4>Engineering & Konzept</h4>
+                                    <p>Maßgeschneiderte Architektur: Server-Setup, Prozess-Bauplan, Print-Layout und Flugplanung für Ihre Drohnenaufnahmen.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-marker">03</div>
+                                <div class="step-body">
+                                    <h4>Präzise Umsetzung & Produktion</h4>
+                                    <p>Nahtlose Realisierung ohne Reibungsverluste – vom Code über die API-Automatisierung bis zum fertigen Druckbogen und 4K-Schnitt.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-marker">04</div>
+                                <div class="step-body">
+                                    <h4>Betrieb, Monitoring & Skalierung</h4>
+                                    <p>Nach dem Launch bleiben wir an Ihrer Seite: mit 24/7 Hosting-Überwachung, laufender Optimierung und schnellem Direkt-Support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion Section -->
+                <div class="faq-container">
+                    <div class="faq-header">
+                        <span class="mono-tag">// SYSTEM_FAQ</span>
+                        <h3>Häufig gestellte Fragen</h3>
+                    </div>
+                    <div class="faq-grid">
+                        <div class="faq-item spotlight-card">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Übernehmen Sie den kompletten Umzug unserer bestehenden Website & E-Mails?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Ja, zu 100 % unterbrechungsfrei. Wir kümmern uns um den kompletten Transfer Ihrer Website, Datenbanken, Domains und E-Mail-Postfächer zu unserem Managed Hosting – inklusive Kündigungshilfe beim Altanbieter und SSL-Einrichtung.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item spotlight-card">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Für welche Unternehmensgröße lohnt sich Prozessoptimierung?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Schon ab 1 bis 5 Mitarbeitenden spart die Automatisierung wiederkehrender Aufgaben (z. B. Kundenanfragen, Angebotserstellung, Rechnungsablage, Terminbuchung) oft mehrere Stunden pro Woche. Wir nutzen pragmatische Tools, die sich innerhalb kürzester Zeit amortisieren.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item spotlight-card">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Welche Genehmigungen sind bei Ihren Drohnenaufnahmen enthalten?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Wir fliegen mit offizieller EU-Fernpilotenlizenz (A1/A2/A3) sowie gewerblicher Luftfahrt-Haftpflichtversicherung. Vor jedem Einsatz prüfen wir Luftraumzonen und holen bei Bedarf alle behördlichen Aufstiegsgenehmigungen für Sie ein.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item spotlight-card">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Kann ich auch einzelne Leistungen (z. B. nur Print oder nur Hosting) buchen?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Selbstverständlich. Jede unserer vier Säulen ist einzeln buchbar. Der größte Hebel entsteht jedoch oft durch die Kombination – etwa wenn Drohnenfotos direkt für Website und Broschüre genutzt werden.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             06 // KONTAKT & PROJEKTANFRAGE
+             ========================================== -->
+        <section id="kontakt" class="section-padding section-observe">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Direct Contact Channels -->
+                    <div class="contact-info">
+                        <span class="mono-tag">// 06_DIREKTKANAL_INITIALISIEREN</span>
+                        <h2 class="section-title">Bereit für Ihr <span class="text-gradient-neon">System-Upgrade?</span></h2>
+                        <p class="contact-lead">
+                            Lassen Sie uns unverbindlich über Ihr Vorhaben sprechen. Wählen Sie rechts Ihre gewünschten Leistungsbereiche – wir melden uns innerhalb von 24 Stunden mit einer klaren Einschätzung.
+                        </p>
+
+                        <div class="contact-cards">
+                            <div class="contact-card-item spotlight-card">
+                                <div class="c-icon">✉</div>
+                                <div>
+                                    <span class="mono-label">E-MAIL DIREKT</span>
+                                    <a href="mailto:info@macasi-solutions.de" class="c-link">info@macasi-solutions.de</a>
+                                </div>
+                            </div>
+                            <div class="contact-card-item spotlight-card">
+                                <div class="c-icon">☎</div>
+                                <div>
+                                    <span class="mono-label">TELEFON & BERATUNG</span>
+                                    <a href="tel:+4915100000000" class="c-link">+49 (0) 151 / 000 00 00</a>
+                                </div>
+                            </div>
+                            <div class="contact-card-item spotlight-card">
+                                <div class="c-icon">⌖</div>
+                                <div>
+                                    <span class="mono-label">EINSATZGEBIET & STANDORT</span>
+                                    <span class="c-text">DACH-weit digital // Vor-Ort Drohnen- & Prozess-Service</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sla-promise-box">
+                            <div class="sla-header">
+                                <span class="pulse-dot"></span>
+                                <span class="mono-text">ANTWORTZEIT-GARANTIE // &lt; 24 STUNDEN</span>
+                            </div>
+                            <p>Keine Callcenter, kein Fachchinesisch: Sie sprechen direkt mit Ihrem verantwortlichen Digital Engineer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Multi-Service Engineering Form -->
+                    <div class="contact-form-wrapper spotlight-card">
+                        <span class="corner-mark tl"></span>
+                        <span class="corner-mark tr"></span>
+                        <span class="corner-mark bl"></span>
+                        <span class="corner-mark br"></span>
+
+                        <form id="engineering-contact-form" class="eng-form" novalidate>
+                            <div class="form-top-bar">
+                                <span class="mono-tag">PROJEKT-KONFIGURATION // SCHRITT 1</span>
+                                <span class="mono-status" id="selected-count-badge">1 Bereich gewählt</span>
+                            </div>
+
+                            <label class="form-section-label">Welche Disziplinen dürfen wir für Sie kombinieren?</label>
+                            <div class="service-chips-selector" role="group" aria-label="Leistungsbereiche auswählen">
+                                <label class="chip-checkbox">
+                                    <input type="checkbox" name="services" value="Website Hosting & Web" checked>
+                                    <span class="chip-box">
+                                        <span class="chip-num">01</span>
+                                        <span class="chip-name">Website Hosting & Web</span>
+                                    </span>
+                                </label>
+                                <label class="chip-checkbox">
+                                    <input type="checkbox" name="services" value="Prozessoptimierung">
+                                    <span class="chip-box">
+                                        <span class="chip-num">02</span>
+                                        <span class="chip-name">Prozessoptimierung</span>
+                                    </span>
+                                </label>
+                                <label class="chip-checkbox">
+                                    <input type="checkbox" name="services" value="Print Medien">
+                                    <span class="chip-box">
+                                        <span class="chip-num">03</span>
+                                        <span class="chip-name">Print Medien</span>
+                                    </span>
+                                </label>
+                                <label class="chip-checkbox">
+                                    <input type="checkbox" name="services" value="Drohnen-Aufnahmen">
+                                    <span class="chip-box">
+                                        <span class="chip-num">04</span>
+                                        <span class="chip-name">Drohnen-Aufnahmen</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="client-name">Ihr Name *</label>
+                                    <input type="text" id="client-name" name="name" required placeholder="Max Mustermann">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-company">Unternehmen</label>
+                                    <input type="text" id="client-company" name="company" placeholder="Mustermann GmbH">
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="client-email">E-Mail-Adresse *</label>
+                                    <input type="email" id="client-email" name="email" required placeholder="name@unternehmen.de">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone">Telefon für Rückfragen</label>
+                                    <input type="tel" id="client-phone" name="phone" placeholder="+49 ...">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-message">Projektbeschreibung / Aktuelle Herausforderung *</label>
+                                <textarea id="client-message" name="message" rows="4" required placeholder="Beschreiben Sie kurz Ihr Ziel (z. B. Website-Umzug, Automatisierung von Abläufen, neue Drucksachen oder Drohnenflug)..."></textarea>
+                            </div>
+
+                            <div class="form-privacy">
+                                <label class="privacy-check">
+                                    <input type="checkbox" id="client-privacy" required>
+                                    <span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage gemäß <button type="button" class="inline-legal-btn" data-open-modal="datenschutz">Datenschutzerklärung</button> zu. *</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-neon btn-full btn-lg magnetic-btn">
+                                <span>Anfrage absenden & Erstberatung sichern</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+
+                            <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#start" class="brand-logo">
+                        <div class="logo-mark">
+                            <span class="logo-bracket">[</span>
+                            <span class="logo-dot"></span>
+                            <span class="logo-bracket">]</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-primary">MACASI</span>
+                            <span class="logo-sub">SOLUTIONS // ENG.</span>
+                        </div>
+                    </a>
+                    <p class="footer-mission">
+                        Digital Engineering & Medienproduktion aus einer Hand: Hochverfügbares Website Hosting, Prozessoptimierung, Printmedien und 4K/6K Drohnenaufnahmen.
+                    </p>
+                    <div class="sys-status-badge">
+                        <span class="pulse-dot"></span>
+                        <span class="mono-label">ALL SYSTEMS OPERATIONAL // DE-FRA</span>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Leistungen</h4>
+                    <ul>
+                        <li><a href="#service-hosting">Website Hosting & Web</a></li>
+                        <li><a href="#service-prozesse">Prozessoptimierung</a></li>
+                        <li><a href="#service-print">Print Medien & Design</a></li>
+                        <li><a href="#service-drohne">Drohnen-Aufnahmen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="#start">Startseite</a></li>
+                        <li><a href="#loesungsfinder">System-Konfigurator</a></li>
+                        <li><a href="#projekte">Referenzen</a></li>
+                        <li><a href="#ueber-uns">Über Uns & Ablauf</a></li>
+                        <li><a href="#kontakt">Projektanfrage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Rechtliches</h4>
+                    <ul>
+                        <li><button type="button" class="footer-legal-link" data-open-modal="impressum">Impressum</button></li>
+                        <li><button type="button" class="footer-legal-link" data-open-modal="datenschutz">Datenschutzerklärung</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="mono-copy">&copy; <span id="current-year">2026</span> MACASI Solutions. Alle Rechte vorbehalten.</span>
+                <span class="mono-copy">ENGINEERED FOR PERFORMANCE // DARK NAVY &amp; NEON GREEN</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         LEGAL MODALS (IMPRESSUM & DATENSCHUTZ)
+         ========================================== -->
+    <div class="legal-modal" id="legal-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="legal-modal-backdrop" data-close-modal></div>
+        <div class="legal-modal-box spotlight-card">
+            <div class="legal-modal-header">
+                <span class="mono-tag" id="modal-tag">// RECHTLICHE INFORMATIONEN</span>
+                <button class="legal-close-btn" data-close-modal aria-label="Schließen">✕</button>
+            </div>
+            <div class="legal-modal-content" id="modal-body-impressum">
+                <h3>Impressum</h3>
+                <p><strong>Angaben gemäß § 5 DDG:</strong></p>
+                <p>
+                    MACASI Solutions<br>
+                    Inhaber: Mario Silva<br>
+                    Musterstraße 1<br>
+                    12345 Musterstadt, Deutschland
+                </p>
+                <p>
+                    <strong>Kontakt:</strong><br>
+                    Telefon: +49 (0) 151 / 000 00 00<br>
+                    E-Mail: info@macasi-solutions.de
+                </p>
+                <p>
+                    <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>
+                    Mario Silva (Anschrift wie oben)
+                </p>
+                <p>
+                    <strong>Streitschlichtung:</strong><br>
+                    Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
+            </div>
+            <div class="legal-modal-content hidden" id="modal-body-datenschutz">
+                <h3>Datenschutzerklärung</h3>
+                <p><strong>1. Datenschutz auf einen Blick</strong><br>
+                Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang sowie zur Bearbeitung Ihrer Kontaktanfrage verarbeitet.</p>
+                <p><strong>2. Hosting</strong><br>
+                Diese Website wird auf Servern innerhalb der Europäischen Union (Deutschland) betrieben. Beim Aufruf werden Server-Logfiles (IP-Adresse in anonymisierter Form, Browsertyp, Uhrzeit) zur Sicherstellung des störungsfreien Betriebs gemäß Art. 6 Abs. 1 lit. f DSGVO erfasst.</p>
+                <p><strong>3. Kontaktformular & E-Mail-Kontakt</strong><br>
+                Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gemäß Art. 6 Abs. 1 lit. b DSGVO bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+                <p><strong>4. Ihre Rechte</strong><br>
+                Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung oder Löschung dieser Daten.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
